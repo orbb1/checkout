@@ -1,8 +1,12 @@
 import React from 'react';
 
+import './Title.css';
+
 const Title = () => {
     return (
-        <h2>Acme Store</h2>        
+        <div className="HeaderTitle-Wrapper">
+            <h2>Acme Store</h2>
+        </div>
     )
 }
 

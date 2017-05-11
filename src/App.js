@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 //Components
-import Header from './containers/header/';
+import Header from './containers/Header/';
 import Bucket from './containers/bucket/';
 import CheckoutForm from './containers/checkout-form/';
 

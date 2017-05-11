@@ -5,11 +5,13 @@ import Title from '../../components/header/title/';
 import Menu from '../../components/header/menu/';
 import HeaderBucket from '../../components/header/header-bucket/';
 
+import './Header.css';
+
 class Header extends Component {
 
     render() {
         return (
-            <div>
+            <div className="Header-Wrapper">
                 <Title/>
                 <Menu/>
                 <HeaderBucket/>
