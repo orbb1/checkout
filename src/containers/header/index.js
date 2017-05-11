@@ -1,9 +1,20 @@
 import React, { Component } from 'react';
 
+//Components
+import Title from '../../components/header/title/';
+import Menu from '../../components/header/menu/';
+import HeaderBucket from '../../components/header/header-bucket/';
+
 class Header extends Component {
 
     render() {
-        return <h1>Checkout! It's header!</h1>
+        return (
+            <div>
+                <Title/>
+                <Menu/>
+                <HeaderBucket/>
+            </div>
+        )
     }
 }
 
