@@ -5,7 +5,6 @@ import Header from './containers/header/';
 import Bucket from './containers/bucket/';
 import CheckoutForm from './containers/checkout-form/';
 
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
