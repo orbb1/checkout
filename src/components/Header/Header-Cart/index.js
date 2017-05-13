@@ -1,14 +1,15 @@
 import React from 'react';
 
 import iconBag from '../../../assets/img/icon-bag.svg';
+import './Header-Cart.css';
 
-const HeaderBucket = () => {
+const HeaderCart = () => {
     return (
-        <div>
+        <div className="Header-Cart-Wrapper">
             <img alt="Bag" src={iconBag}/>
             <span>2</span>
         </div>
     )
 }
 
-export default HeaderBucket;
+export default HeaderCart;

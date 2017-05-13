@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 //Components
-import Title from '../../components/header/title/';
-import Menu from '../../components/header/menu/';
-import HeaderBucket from '../../components/header/header-bucket/';
+import Title from '../../components/Header/Title/';
+import Menu from '../../components/Header/menu/';
+import HeaderCart from '../../components/Header/Header-Cart/';
 
 import './Header.css';
 
@@ -12,9 +12,12 @@ class Header extends Component {
     render() {
         return (
             <div className="Header-Wrapper">
-                <Title/>
+                <div>
+                    <Title/>
+                    <HeaderCart/>
+                </div>
                 <Menu/>
-                <HeaderBucket/>
+                
             </div>
         )
     }
