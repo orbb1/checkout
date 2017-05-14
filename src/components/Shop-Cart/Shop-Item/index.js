@@ -5,22 +5,27 @@ import IncreaseIcon from '../../../assets/img/icon-plus.svg';
 import DecreaseIcon from '../../../assets/img/icon-minus.svg';
 import './Shop-Item.css';
 
-const ShopItem = () => {
+const ShopItem = (props) => {
+    
+    let item = props.cartItem;
+    let increase = props.increase;
+    let decrease = props.decrease;
+    
     return (
         <div className="Item-container">
             <div className="ItemImage-Wrapper">
                 <img src={Glasses} className="ItemImage" alt="Cart item"/>
             </div>
             <div className="ItemDescription-Wrapper">
-                <p className="ItemName">Acme product name</p>
+                <p className="ItemName">{item.name}</p>
                 <div className="ItemCount">
-                    <img src={DecreaseIcon} alt="Remove item"/>
-                    <span>1</span>
-                    <img src={IncreaseIcon} alt="Add item"/>                    
+                    <img onClick={() => decrease(item)} src={DecreaseIcon} alt="Remove item"/>
+                    <span>{item.amount}</span>
+                    <img onClick={() => increase(item)} src={IncreaseIcon} alt="Add item"/>                    
                 </div>
                 <div className="ItemPrice">
                     <span>Price</span>
-                    <span>300.00$</span>
+                    <span>{item.price}.00$</span>
                 </div>
             </div>
         </div>

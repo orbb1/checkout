@@ -1,66 +1,17 @@
 import React, { Component } from 'react';
 import { FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
+import { deliveryInputList, paymentInputList } from '../../config.js';
 
 import './Checkout-Form.css';
 
 class CheckoutForm extends Component {
 
     getDeliveryInputs() {
-        return [{
-            name: 'FIRST NAME',
-            type: 'text',
-            required: true,
-            componentClass: 'input'
-        }, {
-            name: 'LAST NAME',
-            type: 'text',
-            required: true,
-            componentClass: 'input'
-        }, {
-            name: 'E-MAIL',
-            type: 'email',
-            required: true,
-            componentClass: 'input'
-        }, {
-            name: 'PHONE',
-            type: 'text',
-            required: false,
-            componentClass: 'input'
-        }, {
-            name: 'ADDRESS',
-            type: 'text',
-            required: true,
-            componentClass: 'input'
-        }, {
-            name: 'ADDRESS CONT.',
-            type: 'text',
-            required: false,
-            componentClass: 'input'
-        }, {
-            name: 'ZIP CODE',
-            type: 'text',
-            required: true,
-            componentClass: 'input'
-        }, {
-            name: 'CITY',
-            type: 'text',
-            required: true,
-            componentClass: 'input'
-        }, {
-            name: 'STATE',
-            type: 'text',
-            required: true,
-            componentClass: 'input'
-        }, {
-            name: 'Country',
-            type: null,
-            required: true,
-            componentClass: 'select'
-        }];
+        return deliveryInputList;
     }
 
     getPaymentInputs() {
-        return ['CARD NUMBER', 'CARD HOLDER', 'CVC'];
+        return paymentInputList;
     }
 
     onFormSubmit(e) {
@@ -80,7 +31,7 @@ class CheckoutForm extends Component {
                     <FormGroup bsSize="lg">
                         {deliveryInputs.map((input, i) => {
                             return (
-                                <div className="Checkout-Input">
+                                <div key={i} className="Checkout-Input">
                                     <ControlLabel>{deliveryInputs[i].name}</ControlLabel>
                                     {deliveryInputs[i].required
                                         ? <span>  *</span>
@@ -105,7 +56,7 @@ class CheckoutForm extends Component {
                     <FormGroup bsSize="lg">
                         {paymentInputs.map((input, i) => {
                             return (
-                                <div className="Checkout-Input">
+                                <div key={i} className="Checkout-Input">
                                     <ControlLabel>{paymentInputs[i]}</ControlLabel>
                                     <FormControl componentClass="input" type="text" />
                                 </div>
