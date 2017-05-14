@@ -13,6 +13,9 @@ class App extends Component {
       <div className="App-Container">
         <Header/>
         <div className="Content-Container">
+          <div className="Content-Title">
+              <p>Checkout</p>
+          </div>
           <ShopCart/>
           <CheckoutForm/>
         </div>

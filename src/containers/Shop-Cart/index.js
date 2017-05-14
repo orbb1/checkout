@@ -9,14 +9,14 @@ class ShopCart extends Component {
         return (
             <div className="ShopCart-Container">
                 <div>
-                    <p className="ShopCart-Header">your order</p>                    
+                    <p className="Container-Header">your order</p>                    
                 </div>
                 <div>
                     <ShopItem/>
                     <ShopItem/>
                 </div>
                 <div className="ShopCart-Summary">
-                    <p className="ShopCart-Header">Order Summary</p>
+                    <p className="Container-Header">Order Summary</p>
                     <table className="Summary-Table">
                         <tbody>
                             <tr>

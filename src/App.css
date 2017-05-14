@@ -2,3 +2,19 @@
     width: 1000px;
     margin: auto;
 }
+
+.Container-Header, .Content-Title {
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 700;
+    
+}
+
+.Container-Header {
+    margin-left: 15px;
+}
+
+.Content-Title {
+    text-align: center;
+    margin: 30px auto;
+}

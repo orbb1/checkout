@@ -1,5 +1,6 @@
 .Item-container {
     width: 100%;
+    margin: 20px 0;
 }
 
 .ItemDescription-Wrapper, .ItemImage-Wrapper {
@@ -7,13 +8,13 @@
 }
 
 .ItemImage-Wrapper {
-    height: 100px;
     width: 100px;
-    margin: 0 15px;
+    margin: 0 15px 0 0;
 }
 
 .ItemImage {
     width: 100px;
+    vertical-align: super;
 }
 
 .ItemName {

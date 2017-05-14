@@ -1,14 +1,7 @@
 .ShopCart-Container {
     float: right;
-    margin: 0 50px;
-    width: 400px;
-}
-
-.ShopCart-Header {
-    text-transform: uppercase;
-    color: gray;
-    font-weight: 700;
-    margin-left: 30px;
+    margin: 0 100px;
+    width: 300px;
 }
 
 .Summary-Table {
