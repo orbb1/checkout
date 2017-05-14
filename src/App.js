@@ -2,18 +2,21 @@ import React, { Component } from 'react';
 
 //Components
 import Header from './containers/Header/';
-import Bucket from './containers/bucket/';
-import CheckoutForm from './containers/checkout-form/';
+import ShopCart from './containers/Shop-Cart/';
+import CheckoutForm from './containers/Checkout-Form/';
 
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="App-Container">
         <Header/>
-        <Bucket/>
-        <CheckoutForm/>
+        <div className="Content-Container">
+          <ShopCart/>
+          <CheckoutForm/>
+        </div>
+        
       </div>
     );
   }

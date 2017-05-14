@@ -1,0 +1,40 @@
+.Item-container {
+    width: 100%;
+}
+
+.ItemDescription-Wrapper, .ItemImage-Wrapper {
+    display: inline-block;
+}
+
+.ItemImage-Wrapper {
+    height: 100px;
+    width: 100px;
+    margin: 0 15px;
+}
+
+.ItemImage {
+    width: 100px;
+}
+
+.ItemName {
+    font-weight: 700;
+    color: gray;
+    margin: 0;
+}
+
+.ItemCount > * {
+    margin: 10px;
+}
+
+.ItemCount > img {
+    vertical-align: middle;
+}
+
+.ItemPrice {
+    font-size: 14px;
+}
+
+.ItemPrice > span:nth-child(2) {
+    float: right;
+    font-weight: 700;
+}
