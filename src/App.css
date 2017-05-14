@@ -18,3 +18,35 @@
     text-align: center;
     margin: 30px auto;
 }
+
+
+
+/*Media*/
+
+@media (max-width: 767px) {
+    .Content-Container {
+        width: 320px;
+    }
+
+    .Header-Inner {
+        width: 300px;
+    }
+
+    .HeaderTitle-Wrapper > h2 {
+        font-size: 20px;
+    }
+
+    .Header-Menu-List {
+        display: none;
+    }
+
+    .Hamburger-Menu {
+        display: block;
+        float: left;
+    }
+
+    .ShopCart-Container, .Form-Container {
+        float: none;
+        margin: auto;
+    }
+}

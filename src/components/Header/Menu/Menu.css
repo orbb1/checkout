@@ -1,9 +1,17 @@
+.Header-Menu-Wrapper {
+    position: relative;
+}
+
 .Header-Menu-List {
     list-style: none;
     font-size: 20px;
     font-weight: 700;
     color: gray;
     padding: 0;
+}
+
+.Hamburger-Menu {
+    display: none;
 }
 
 .Header-Menu-List > li {

@@ -17,9 +17,9 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <div className="App-Container">
+        <div className="App-Container" id="outer-container">
           <Header/>
-          <div className="Content-Container">
+          <div id="page-wrap" className="Content-Container">
             <div className="Content-Title">
                 <p>Checkout</p>
             </div>

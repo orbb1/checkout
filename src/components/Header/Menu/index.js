@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './Menu.css';
+import MenuIcon from '../../../assets/img/icon-hamburger.svg';
 
 const Menu = () => {
     return (
@@ -11,6 +12,10 @@ const Menu = () => {
                 <li><a href="#">Accessories</a></li>
                 <li><a href="#">Shoes</a></li>
             </ul>
+            <div className="Hamburger-Menu">
+                        <img src={MenuIcon} alt="Menu"/>
+                        <span>Menu</span>
+                    </div>
         </div>
     )
 }
