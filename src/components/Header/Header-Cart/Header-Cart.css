@@ -1,3 +1,5 @@
 .Header-Cart-Wrapper {
-    float: right;
+    position: absolute;
+    right: 10%;
+    top: 20px;
 }
