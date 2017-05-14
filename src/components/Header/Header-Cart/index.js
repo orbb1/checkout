@@ -6,7 +6,7 @@ import './Header-Cart.css';
 const HeaderCart = () => {
     return (
         <div className="Header-Cart-Wrapper">
-            <img alt="Bag" src={iconBag}/>
+            <img alt="Bag" className="Cart-Icon" src={iconBag}/>
             <span>2</span>
         </div>
     )
