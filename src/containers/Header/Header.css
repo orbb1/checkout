@@ -6,5 +6,7 @@
 
 .Header-Inner {
     position: relative;
+    width: 700px;
+    margin: auto;
 }
 

@@ -1,6 +1,6 @@
-.Content-Container {
-    width: 1000px;
-    margin: auto;
+.Content-Container  {
+    width: 700px;
+    margin: 0 auto 50px;
 }
 
 .Container-Header, .Content-Title {
