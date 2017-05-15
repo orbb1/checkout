@@ -14,9 +14,8 @@ class CheckoutForm extends Component {
         return PAYMENT_INPUTS;
     }
 
-    onFormSubmit(e) {
-        e.preventDefault();
-        alert("Succes");
+    onFormSubmit() {
+        alert("Succes!");
     }
 
     render() {
@@ -28,7 +27,7 @@ class CheckoutForm extends Component {
         return (
             <div className="Form-Container">
                 <form onSubmit={this.onFormSubmit}>
-                    <p onClick={this.getCountries} className="Container-Header">Delivery address</p>
+                    <p className="Container-Header">Delivery address</p>
                     <FormGroup bsSize="lg">
                         {deliveryInputs.map((input, i) => {
                             return (
@@ -45,8 +44,8 @@ class CheckoutForm extends Component {
                                         : <FormControl
                                             required={deliveryInputs[i].required}
                                             componentClass="select">
-                                            { countries.map((count, i) => {
-                                                return <option key={i}>{count}</option>
+                                            { countries.map((country, i) => {
+                                                return <option key={i}>{country}</option>
                                             })}
                                         </FormControl>}
                                 </div>
@@ -63,20 +62,11 @@ class CheckoutForm extends Component {
                                     {paymentInputs[i].required
                                         ? <span>  *</span>
                                         : null}
-                                    {paymentInputs[i].componentClass === 'input'
-                                        ? <FormControl
-                                            inputRef={ref => { this.input = ref; }}
-                                            componentClass="input"
-                                            required={paymentInputs[i].required}
-                                            type={paymentInputs[i].type} />
-                                        : <FormControl
-                                            inputRef={ref => { this.input = ref; }}
-                                            required={paymentInputs[i].required}
-                                            componentClass="select">
-                                            { countries.map((count, i) => {
-                                                return <option key={i}>{count}</option>
-                                            })}
-                                        </FormControl>}
+                                    <FormControl
+                                        inputRef={ref => { this.input = ref; }}
+                                        componentClass="input"
+                                        required={paymentInputs[i].required}
+                                        type={paymentInputs[i].type} />
                                 </div>
                             )
                         })

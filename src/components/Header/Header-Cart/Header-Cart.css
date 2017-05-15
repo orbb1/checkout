@@ -8,4 +8,9 @@
     vertical-align: middle;
 }
 
-/*All media queries are in App.css*/
+@media (max-width: 767px) {
+    
+    .Header-Cart-Wrapper {
+        top: 16px;
+    } 
+}

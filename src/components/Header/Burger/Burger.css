@@ -2,4 +2,15 @@
     display: none;
 }
 
-/*All media queries are in App.css*/
+@media (max-width: 767px) {
+    
+    .Hamburger-Menu {
+        top: 16px;
+    } 
+
+    .Hamburger-Menu {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+    }
+}

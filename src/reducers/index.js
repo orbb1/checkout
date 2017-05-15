@@ -14,7 +14,6 @@ const initialState = [
 
 export default function itemCounter(state = initialState, action) {
     if (action.type === 'INCREASE') {
-
         return state.map((item, i) => {
             if (item.id === action.payload.id) {
                 item.amount++;
@@ -28,7 +27,5 @@ export default function itemCounter(state = initialState, action) {
             } 
             return item;
         })
-    } else {
-        return state;
-    };
+    } return state;
 }

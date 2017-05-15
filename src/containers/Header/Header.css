@@ -10,4 +10,13 @@
     margin: auto;
 }
 
-/*All media queries are in App.css*/
+@media (max-width: 767px) {
+
+    .Header-Wrapper {
+        padding: 0
+    }
+    
+    .Header-Inner {
+        width: 300px;
+    }
+}

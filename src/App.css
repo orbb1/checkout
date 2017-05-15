@@ -19,46 +19,9 @@
     margin: 30px auto;
 }
 
-
-
-/*Media*/
-
 @media (max-width: 767px) {
+    
     .Content-Container {
         width: 320px;
-    }
-    .Header-Wrapper {
-        padding: 0
-    }
-    .Header-Inner {
-        width: 300px;
-    }
-
-    .HeaderTitle-Wrapper > h2 {
-        font-size: 18px;
-        font-weight: 700;
-    }
-
-    .mobile-hidden {
-        display: none;
-    }
-
-    .Header-Menu-List > li {
-        display: block;
-    }
-    
-    .Header-Cart-Wrapper, .Hamburger-Menu {
-        top: 16px;
-    } 
-
-    .Hamburger-Menu {
-        display: inline-block;
-        position: absolute;
-        left: 0;
-    }
-
-    .ShopCart-Container, .Form-Container {
-        float: none;
-        margin: auto;
     }
 }

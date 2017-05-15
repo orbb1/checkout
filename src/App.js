@@ -3,7 +3,6 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducer from './reducers/';
 
-//Components
 import Header from './containers/Header/';
 import ShopCart from './containers/Shop-Cart/';
 import CheckoutForm from './containers/Checkout-Form/';
@@ -15,11 +14,12 @@ const store = createStore(reducer);
 class App extends Component {
 
   render() {
+
     return (
       <Provider store={store}>
-        <div className="App-Container" id="outer-container">
+        <div className="App-Container">
           <Header/>
-          <div id="page-wrap" className="Content-Container">
+          <div className="Content-Container">
             <div className="Content-Title">
                 <p>Checkout</p>
             </div>

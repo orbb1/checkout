@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import ShopItem from '../../components/Shop-Cart/Shop-Item/';
+
 import './Shop-Cart.css';
 
 class ShopCart extends Component {
@@ -20,11 +21,8 @@ class ShopCart extends Component {
         this.props.onDecrease(item);
     }
     
-    
-
-
-
     render() {
+
         let shippingPrice = 20;
         let subtotal = this.props.cartItems.reduce((a, b) => {
             return a + (b.price*b.amount);
@@ -34,10 +32,11 @@ class ShopCart extends Component {
         return (
             <div className="ShopCart-Container">
                 <div>
-                    <p className="Container-Header">your order</p>                    
+                    <p className="Container-Header">Your order</p>                    
                 </div>
                 <div>{this.props.cartItems.map((cartItem, i) => {
-                        return <ShopItem key={i} 
+                        return <ShopItem 
+                            key={i} 
                             cartItem={cartItem} 
                             increase={this.increase} 
                             decrease={this.decrease}/>

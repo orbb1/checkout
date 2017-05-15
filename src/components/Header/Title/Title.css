@@ -3,4 +3,10 @@
     display: inline-block;
 }
 
-/*All media queries are in App.css*/
+@media (max-width: 767px) {
+
+    .HeaderTitle-Wrapper > h2 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}

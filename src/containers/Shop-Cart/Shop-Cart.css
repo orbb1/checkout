@@ -25,3 +25,11 @@
 .Summary-Table > tfoot {
     border-top: 2px solid gray;
 }
+
+@media (max-width: 767px) {
+    
+    .ShopCart-Container {
+        float: none;
+        margin: auto;
+    }
+}
