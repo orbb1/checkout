@@ -27,22 +27,34 @@
     .Content-Container {
         width: 320px;
     }
-
+    .Header-Wrapper {
+        padding: 0
+    }
     .Header-Inner {
         width: 300px;
     }
 
     .HeaderTitle-Wrapper > h2 {
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: 700;
     }
 
-    .Header-Menu-List {
+    .mobile-hidden {
         display: none;
     }
 
-    .Hamburger-Menu {
+    .Header-Menu-List > li {
         display: block;
-        float: left;
+    }
+    
+    .Header-Cart-Wrapper, .Hamburger-Menu {
+        top: 16px;
+    } 
+
+    .Hamburger-Menu {
+        display: inline-block;
+        position: absolute;
+        left: 0;
     }
 
     .ShopCart-Container, .Form-Container {

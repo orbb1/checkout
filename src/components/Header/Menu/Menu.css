@@ -2,6 +2,10 @@
     position: relative;
 }
 
+.mobile-hidden {
+    display: block;
+}
+
 .Header-Menu-List {
     list-style: none;
     font-size: 20px;
@@ -10,11 +14,9 @@
     padding: 0;
 }
 
-.Hamburger-Menu {
-    display: none;
-}
-
 .Header-Menu-List > li {
     display: inline;
     margin: 25px;
 }
+
+/*All media queries are in App.css*/
