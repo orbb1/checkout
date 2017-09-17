@@ -4,7 +4,7 @@ import './Title.css';
 
 const Title = () => {
     return (
-        <div className="HeaderTitle-Wrapper">
+        <div className="Title">
             <h2>Acme Store</h2>
         </div>
     )

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import './Menu.css';
+import './Nav.css';
 
-const Menu = (props) => {
+const Nav = (props) => {
     return (
-        <div className="Header-Menu-Wrapper">
-            <ul className={props.hideMenu ? "Header-Menu-List  mobile-hidden" : "Header-Menu-List"}>
+        <div className="Nav">
+            <ul className={props.hideMenu ? "Nav-list  mobile-hidden" : "Nav-list"}>
                 <li><a href="#">Women</a></li>
                 <li><a href="#">Men</a></li>
                 <li><a href="#">Accessories</a></li>
@@ -15,4 +15,4 @@ const Menu = (props) => {
     )
 }
 
-export default Menu;
+export default Nav;

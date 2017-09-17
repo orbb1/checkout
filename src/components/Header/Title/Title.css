@@ -1,12 +1,4 @@
-.HeaderTitle-Wrapper {
+.Title {
     text-transform: uppercase;
     display: inline-block;
-}
-
-@media (max-width: 767px) {
-
-    .HeaderTitle-Wrapper > h2 {
-        font-size: 18px;
-        font-weight: 700;
-    }
 }

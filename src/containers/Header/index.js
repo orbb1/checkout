@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import Title from '../../components/Header/Title/';
-import Menu from '../../components/Header/Menu/';
+import Nav from '../../components/Header/Nav/';
 import HeaderCart from '../../components/Header/Header-Cart/';
 import Burger from '../../components/Header/Burger/';
 
@@ -23,13 +23,11 @@ class Header extends Component {
     render() {
 
         return (
-            <div className="Header-Wrapper">
-                <div className="Header-Inner">
-                    <Burger onHideMenu={this.onHideMenu}/>
-                    <Title/>
-                    <HeaderCart cartItems={this.props.cartItems} />
-                </div>
-                <Menu hideMenu={this.state.hideMenu}/>
+            <div className="Header">
+                <Burger onHideMenu={this.onHideMenu}/>
+                <Title/>
+                <Nav hideMenu={this.state.hideMenu}/>
+                <HeaderCart cartItems={this.props.cartItems}/>
             </div>
         )
     }

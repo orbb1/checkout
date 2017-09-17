@@ -1,14 +1,13 @@
 import React from 'react';
+import {Glyphicon} from 'react-bootstrap';
 
-import MenuIcon from '../../../assets/img/icon-hamburger.svg';
 import './Burger.css';
 
 const Burger = (props) => {
 
     return (
-            <div className="Hamburger-Menu">
-                <img onClick={props.onHideMenu} src={MenuIcon} alt="Menu"/>
-                <span>Menu</span>
+            <div className="HamburgerMenu">
+                <Glyphicon glyph='menu-hamburger' onClick={props.onHideMenu}/>
             </div>
     )
 }

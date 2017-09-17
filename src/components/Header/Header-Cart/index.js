@@ -1,6 +1,6 @@
 import React from 'react';
+import {Glyphicon} from 'react-bootstrap';
 
-import iconBag from '../../../assets/img/icon-bag.svg';
 import './Header-Cart.css';
 
 const HeaderCart = (props) => {
@@ -10,8 +10,8 @@ const HeaderCart = (props) => {
         }, 0);
 
     return (
-        <div className="Header-Cart-Wrapper">
-            <img alt="Bag" className="Cart-Icon" src={iconBag}/>
+        <div className="HeaderCart">
+            <Glyphicon glyph='shopping-cart'/>
             <span>{itemCount}</span>
         </div>
     )
