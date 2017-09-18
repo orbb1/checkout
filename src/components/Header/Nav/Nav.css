@@ -1,0 +1,38 @@
+.Nav {
+  background-color: rgba(148, 26, 24, 0.6);
+  color: #fff;
+  transform: translateX(0);
+  width: 100%;
+  position: absolute;
+  top: 55px;
+  z-index: 2;
+  -webkit-transition: transform 500ms ease-in-out;
+  -moz-transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  height: 100vh;
+}
+
+.Nav.u-hidden {
+  transform: translateX(-100%);
+}
+
+.Nav-list {
+  background-color: #941a18;
+  list-style: none;
+  padding-left: 0;
+  display: block;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.Nav-list-item {
+  display: block;
+  padding: 15px;
+}
+
+.Nav-list-item:hover {
+  background-color: #460f0e;
+  -webkit-transition: background-color 500ms ease;
+  -moz-transition: background-color 500ms ease;
+  transition: background-color 500ms ease;
+}

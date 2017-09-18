@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
 
 import Title from '../../components/Header/Title/';
 import Nav from '../../components/Header/Nav/';
@@ -12,7 +12,7 @@ class Header extends Component {
     constructor (props) {
         super(props)
         
-        this.state = { hideMenu: true };
+        this.state = {hideMenu: true};
         this.onHideMenu = this.onHideMenu.bind(this);
     }
 
@@ -23,19 +23,19 @@ class Header extends Component {
     render() {
 
         return (
-            <div className="Header">
-                <Burger onHideMenu={this.onHideMenu}/>
-                <Title/>
-                <Nav hideMenu={this.state.hideMenu}/>
-                <HeaderCart cartItems={this.props.cartItems}/>
+            <div>
+                <div className={`Header ${this.state.hideMenu ? `` : `activeMenu`}`}>
+                    <Burger hideMenu={this.state.hideMenu} onHideMenu={this.onHideMenu}/>
+                    <Title/>
+                    <HeaderCart cartItems={this.props.cartItems}/>
+                </div>
+                <Nav onHideMenu={this.onHideMenu} hideMenu={this.state.hideMenu}/>
             </div>
         )
     }
 }
 
 export default connect(
-    state => ({
-        cartItems: state
-    }),
+    state => ({cartItems: state}),
     null
 )(Header);

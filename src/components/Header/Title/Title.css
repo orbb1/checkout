@@ -1,4 +1,7 @@
 .Title {
     text-transform: uppercase;
-    display: inline-block;
+}
+
+.Title-text {
+    margin: 0;
 }

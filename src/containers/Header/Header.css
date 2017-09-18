@@ -1,0 +1,21 @@
+.Header {
+  background-color: #941a18;
+  color: #fff;
+  height: 55px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  opacity: 1;
+  -webkit-transition: opacity 350ms ease;
+  -moz-transition: opacity 350ms ease;
+  transition: opacity 350ms ease;
+}
+
+.Header.activeMenu {
+  opacity: 0.6;
+}
+
+.Header > * {
+  display: inline-block;
+  vertical-align: middle;
+}

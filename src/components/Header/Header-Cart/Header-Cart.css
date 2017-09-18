@@ -1,0 +1,10 @@
+.HeaderCart {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 12px;
+  RIGHT: 15px;
+}
+
+.HeaderCart > * {
+  margin: 0 2px;
+}
