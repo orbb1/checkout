@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
-import { DELIVERY_INPUTS, PAYMENT_INPUTS, COUNT } from '../../config.js';
+import React, {Component} from 'react';
+import {FormGroup, ControlLabel, FormControl, Button} from 'react-bootstrap';
+import {DELIVERY_INPUTS, PAYMENT_INPUTS, COUNT} from '../../config.js';
 
 import './Checkout-Form.css';
 
@@ -25,13 +25,13 @@ class CheckoutForm extends Component {
         const countries = COUNT;
 
         return (
-            <div className="Form-Container">
+            <div className="CheckoutForm col-sm-6">
                 <form onSubmit={this.onFormSubmit}>
-                    <p className="Container-Header">Delivery address</p>
-                    <FormGroup bsSize="lg">
+                    <h3 className="CheckoutForm-title">Delivery address</h3>
+                    <FormGroup>
                         {deliveryInputs.map((input, i) => {
                             return (
-                                <div key={i} className="Checkout-Input">
+                                <div key={i} className="CheckoutForm-input">
                                     <ControlLabel>{deliveryInputs[i].name}</ControlLabel>
                                     {deliveryInputs[i].required
                                         ? <span>  *</span>
@@ -44,7 +44,7 @@ class CheckoutForm extends Component {
                                         : <FormControl
                                             required={deliveryInputs[i].required}
                                             componentClass="select">
-                                            { countries.map((country, i) => {
+                                            {countries.map((country, i) => {
                                                 return <option key={i}>{country}</option>
                                             })}
                                         </FormControl>}
@@ -53,11 +53,11 @@ class CheckoutForm extends Component {
                         })
                         }
                     </FormGroup>
-                    <p className="Container-Header">Payment</p>
-                    <FormGroup bsSize="lg">
+                    <h3 className="CheckoutForm-title">Payment</h3>
+                    <FormGroup>
                         {paymentInputs.map((input, i) => {
                              return (
-                                <div key={i} className="Checkout-Input">
+                                <div key={i} className="CheckoutForm-input">
                                     <ControlLabel>{paymentInputs[i].name}</ControlLabel>
                                     {paymentInputs[i].required
                                         ? <span>  *</span>
@@ -72,7 +72,7 @@ class CheckoutForm extends Component {
                         })
                         }
                     </FormGroup>
-                    <Button className="Checkout-Button" bsSize="large" type="submit">Buy</Button>
+                    <Button className="CheckoutForm-btn" type="submit">Buy</Button>
                 </form>
             </div>
         )

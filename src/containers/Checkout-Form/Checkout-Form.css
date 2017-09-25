@@ -1,36 +1,17 @@
-.Form-Container {
-    margin: 0;
-    width: 300px;
+.CheckoutForm form {
+    max-width: 400px;
+    margin: auto;
 }
 
-.Checkout-Input {
-    margin: 30px 0;
+.CheckoutForm-title {
+    border-bottom: 1px solid;
 }
 
-.Checkout-Input > label,
-.Checkout-Button {
-    text-transform: uppercase;
-    font-size: 13px;
+.CheckoutForm-input {
+    margin: 15px 0;
 }
 
-.Checkout-Input > input:focus,
-.Checkout-Input > select:focus {
-    border-color: darkmagenta;
-    box-shadow: 0 0 5px darkmagenta;
-}
-
-.Checkout-Button,
-.Checkout-Button:hover {
-    background-color: darkmagenta;
-    color: white;
-    font-weight: 700;
-    width: 100%;
-}
-
-@media (max-width: 767px) {
-
-    .Form-Container {
-        float: none;
-        margin: auto;
-    }
+.CheckoutForm-btn {
+    border-radius: 0;
+    width: 200px;
 }

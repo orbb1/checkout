@@ -1,3 +1,7 @@
+.App {
+    margin-top: 55px;
+}
+
 .Content-Container  {
     width: 700px;
     margin: 0 auto 50px;
@@ -19,9 +23,9 @@
     margin: 30px auto;
 }
 
-@media (max-width: 767px) {
-    
-    .Content-Container {
-        width: 320px;
-    }
+.Content-title-row {
+    text-align: center;
+    text-transform: uppercase;
+    color: #26429f;
+    padding: 25px;
 }

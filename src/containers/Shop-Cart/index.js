@@ -30,7 +30,7 @@ class ShopCart extends Component {
         let total = shippingPrice + subtotal;
             
         return (
-            <div className="ShopCart-Container">
+            <div className="ShopCart-Container col-sm-6">
                 <div>
                     <p className="Container-Header">Your order</p>                    
                 </div>

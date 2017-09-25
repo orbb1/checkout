@@ -3,7 +3,7 @@
   color: #fff;
   transform: translateX(0);
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 55px;
   z-index: 2;
   -webkit-transition: transform 500ms ease-in-out;
@@ -35,4 +35,8 @@
   -webkit-transition: background-color 500ms ease;
   -moz-transition: background-color 500ms ease;
   transition: background-color 500ms ease;
+}
+
+.Nav-list-item > a {
+  color: #fff;
 }
