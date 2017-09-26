@@ -1,29 +1,39 @@
-.Summary-Table {
-    width: 100%;
-    border-collapse: collapse;
+.ShopCart {
+    max-width: 400px;
+    margin: auto;
 }
 
-.Summary-Table td {
-    height: 45px;
+.ShopCart-header {
+    border-bottom: 1px solid;
 }
 
-.Summary-Table > tbody > tr > td:nth-child(even),
-.Summary-Table > tfoot > tr > td:nth-child(even) {
-    text-align: right;
+.Summary {
+    border: 2px solid #1c3176;
+    border-radius: 5px;
 }
 
-.Summary-Table > tfoot > tr > td:nth-child(even){ 
+.Summary-header {
+    text-transform: uppercase;
     font-weight: 700;
+    color: #fff;
+    background-color: #1c3176;
+    padding: 10px;
+    margin: 0;
 }
 
-.Summary-Table > tfoot {
-    border-top: 2px solid gray;
+.Summary-table {
+    width: 100%;
 }
 
-@media (max-width: 767px) {
-    
-    .ShopCart-Container {
-        float: none;
-        margin: auto;
-    }
+.Summary-table tr {
+    border-bottom: 1px solid #1c3176;
+}
+
+.Summary-table td {
+    padding: 5px 10px;
+}
+
+.Summary-table tfoot {
+    background-color: #1c3176;
+    color: #fff;
 }

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
 
 import ShopItem from '../../components/Shop-Cart/Shop-Item/';
 
@@ -8,7 +8,7 @@ import './Shop-Cart.css';
 class ShopCart extends Component {
     constructor(props) {
         super(props)
-        
+
         this.increase = this.increase.bind(this);
         this.decrease = this.decrease.bind(this);
     }
@@ -20,49 +20,49 @@ class ShopCart extends Component {
     decrease(item) {
         this.props.onDecrease(item);
     }
-    
+
     render() {
 
         let shippingPrice = 20;
         let subtotal = this.props.cartItems.reduce((a, b) => {
-            return a + (b.price*b.amount);
+            return a + (b.price * b.amount);
         }, 0);
         let total = shippingPrice + subtotal;
-            
+
         return (
-            <div className="ShopCart-Container col-sm-6">
-                <div>
-                    <p className="Container-Header">Your order</p>                    
-                </div>
-                <div>{this.props.cartItems.map((cartItem, i) => {
-                        return <ShopItem 
-                            key={i} 
-                            cartItem={cartItem} 
-                            increase={this.increase} 
-                            decrease={this.decrease}/>
-                        })
+            <div className="col-sm-6">
+                <div className="ShopCart">
+                    <h3 className="ShopCart-header">Your order</h3>
+                    <div>{this.props.cartItems.map((cartItem, i) => {
+                        return <ShopItem
+                            key={i}
+                            cartItem={cartItem}
+                            increase={this.increase}
+                            decrease={this.decrease} />
+                    })
                     }
-                </div>
-                <div className="ShopCart-Summary">
-                    <p className="Container-Header">Order Summary</p>
-                    <table className="Summary-Table">
-                        <tbody>
-                            <tr>
-                                <td>Subtotal</td>
-                                <td>{subtotal}$</td>
-                            </tr>
-                            <tr>
-                                <td>Shipping</td>
-                                <td>{shippingPrice}$</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td>Total</td>
-                                <td>{total}$</td>
-                            </tr>
-                        </tfoot>
-                    </table>
+                    </div>
+                    <div className="Summary">
+                        <p className="Summary-header">Order Summary</p>
+                        <table className="Summary-table">
+                            <tbody>
+                                <tr>
+                                    <td>Subtotal</td>
+                                    <td>{subtotal}$</td>
+                                </tr>
+                                <tr>
+                                    <td>Shipping</td>
+                                    <td>{shippingPrice}$</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Total</td>
+                                    <td>{total}$</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
                 </div>
             </div>
         )
