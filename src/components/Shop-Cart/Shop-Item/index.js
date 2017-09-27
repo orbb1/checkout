@@ -1,8 +1,7 @@
 import React from 'react';
+import {Glyphicon, Button} from 'react-bootstrap';
 
 import Glasses from '../../../assets/img/pic-item.png';
-import IncreaseIcon from '../../../assets/img/icon-plus.svg';
-import DecreaseIcon from '../../../assets/img/icon-minus.svg';
 import './Shop-Item.css';
 
 const ShopItem = (props) => {
@@ -12,19 +11,23 @@ const ShopItem = (props) => {
     let decrease = props.decrease;
     
     return (
-        <div className="Item-container">
-            <div className="ItemImage-Wrapper">
-                <img src={Glasses} className="ItemImage" alt="Cart item"/>
+        <div className="ShopItem">
+            <p className="ShopItem-name">{item.name}</p>
+            <div className="ShopItem-image">
+                <img src={Glasses} alt="Cart item"/>
             </div>
-            <div className="ItemDescription-Wrapper">
-                <p className="ItemName">{item.name}</p>
-                <div className="ItemCount">
-                    <img onClick={() => decrease(item)} src={DecreaseIcon} alt="Remove item"/>
-                    <span>{item.amount}</span>
-                    <img onClick={() => increase(item)} src={IncreaseIcon} alt="Add item"/>                    
+            <div className="ShopItem-description">
+                <div className="ShopItem-counter">
+                    <Button onClick={() => decrease(item)}>
+                        <Glyphicon glyph='minus'/>
+                    </Button>
+                    <span className="ShopItem-amount">{item.amount}</span>
+                    <Button onClick={() => increase(item)}>
+                        <Glyphicon glyph='plus'/>
+                    </Button>
                 </div>
-                <div className="ItemPrice">
-                    <span>Price</span>
+                <div className="ShopItem-price">
+                    <span>Price: </span>
                     <span>{item.price}.00$</span>
                 </div>
             </div>

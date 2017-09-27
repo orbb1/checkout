@@ -33,6 +33,10 @@
     padding: 5px 10px;
 }
 
+.Summary-table td:nth-child(2) {
+    text-align: right;
+}
+
 .Summary-table tfoot {
     background-color: #1c3176;
     color: #fff;

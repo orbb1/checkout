@@ -1,48 +1,41 @@
-.Item-container {
+.ShopItem {
     width: 100%;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
-.ItemDescription-Wrapper, .ItemImage-Wrapper {
+.ShopItem-name {
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #1c3176;
+    color: #fff;
+}
+
+.ShopItem-image, 
+.ShopItem-description {
     display: inline-block;
-}
-
-.ItemDescription-Wrapper {
-    width: 185px;
-}
-
-.ItemImage-Wrapper {
-    width: 100px;
-    margin: 0 15px 0 0;
-}
-
-.ItemImage {
-    width: 100px;
-    vertical-align: super;
-}
-
-.ItemName {
-    font-weight: 700;
-    color: gray;
-    margin: 0;
-}
-
-.ItemCount > * {
-    margin: 10px;
-}
-
-.ItemCount > img {
     vertical-align: middle;
-    cursor: pointer;
 }
 
-.ItemPrice {
-    font-size: 14px;
+.ShopItem-image {
+    width: 50%;
+    margin: 0 10px 0 0;
 }
 
-.ItemPrice > span:nth-child(2) {
-    float: right;
+.ShopItem-image img {
+    width: 100%;
+}
+
+.ShopItem-amount {
+    margin: 0 10px;
+}
+
+.ShopItem-price {
+    margin: 10px 0;
+}
+
+.ShopItem-price > span:nth-child(2) {
     font-weight: 700;
 }
-
-/*All media queries are in App.css*/

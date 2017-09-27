@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import React, {Component} from 'react';
+import {Provider} from 'react-redux';
+import {createStore} from 'redux';
 import reducer from './reducers/';
 import Header from './containers/Header/';
 import ShopCart from './containers/Shop-Cart/';
 import CheckoutForm from './containers/Checkout-Form/';
+import Footer from './containers/Footer/';
 
 import './App.css';
 
@@ -27,6 +28,7 @@ class App extends Component {
 							<ShopCart />
 						</div>
 					</div>
+					<Footer />
 				</div>
 			</Provider>
 		);
