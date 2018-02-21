@@ -12,10 +12,6 @@
   transition: opacity 350ms ease;
 }
 
-.Header.activeMenu {
-  opacity: 0.6;
-}
-
 .Header > * {
   display: inline-block;
   vertical-align: middle;

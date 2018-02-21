@@ -24,7 +24,7 @@ class Header extends Component {
 
         return (
             <div>
-                <div className={`Header ${this.state.hideMenu ? `` : `activeMenu`}`}>
+                <div className="Header">
                     <Burger hideMenu={this.state.hideMenu} onHideMenu={this.onHideMenu}/>
                     <Title/>
                     <HeaderCart cartItems={this.props.cartItems}/>
